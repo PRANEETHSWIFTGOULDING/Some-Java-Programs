@@ -1,50 +1,12 @@
-# Some-Java-Programs
-Some basic java programs 
-package abstractclassexample1;
+Some Java Programs
 
-abstract class Gameconsole{
-int i=10;
- void display(){
-System.out.println("The score is");
-}
- abstract void playgame();
- public abstract void playgame2();
 
-}
-class A extends Gameconsole {
-    void start(){
-System.out.println("GAME Started");
-    }
-   void  playgame(){
-   System.out.println("Lets play the Game");
-   }
+Pre-requisites 
 
-   
-    public void playgame2() {
-      System.out.println("Lets play the Game 2");
-    }
-   
-}
-class B extends A {
+1.JDK
+2. Notepad
+3.Any Editor(Netbeans, Eclipse etc.,)
 
-    @Override
-    void playgame() {
-      System.out.println("Lets play the Game  in A");
 
-    }
+Some Java programs are uploaded which helps you to understand some basic programs
 
-    @Override
-    public void playgame2() {
-         System.out.println("Lets play the Game 2 in B");
-         display();
-         start();
-         
- }
-}
-public class Abstractclassexample1 {
-    public static void main(String[] args) {
-    B b=new B();
-    b.playgame2();
-    }
-    
-}
